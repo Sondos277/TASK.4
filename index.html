@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,25 +20,33 @@
     <h1>MoNAC</h1>
     <ul>
      <li><a href="#">Log In</a></li> 
-     <li><a href="#">Sign Up</a></li> 
+     <li><a href="#" class="btn-dark">Sign Up</a></li> 
+     <li><button id="mode-toggle" aria-label="Toggle Dark Mode" class="header-mood-btn">
+    <i class="fa-solid fa-sun"></i>
+  </button>
+    </li>
     </ul>
+
   </header>
   <!--end Header -->
- <!--start main-->
+<!-- Overlay -->
+<button id="customize-btn" class="floating-customize" aria-label="Customize">
+  <i class="fa-solid fa-gear"></i>
+  <span>CUSTOMIZE</span>
+</button>
+  <!--start main-->
   <main>
     <!--start Hero-->
     <section class="hero">
-      <div>
+      <div class="hero-text">
         <h2>Improve your <em>Skills</em> Faster</h2>
         <p>Speed up the skill acquired process by taking unlimited courses that match your needs.</p>
-        <a href="#">Enroll Now</a>
+        <a href="#" class="btn-outline">Enroll Now</a>
       </div>
-      <figure>
-        <img src="hero.jpg" alt="People learning online via laptop"
-        width="1300">
-      </figure>
+      <figure class="ph ph-hero" aria-label="placeholder"></figure>
     </section>
     <!--end hero-->
+
     <!--start Statistics-->
     <section class="statistics">
       <ul>
@@ -49,77 +56,76 @@
         <li><strong>1K+</strong> Popular Courses</li>
       </ul>
     </section>
-<!--end Statistics-->
+    <!--end Statistics-->
+
     <!-- Smart Education-->
     <section class="smart-education">
-      <figure>
-        <img src="smart-education.jpg" alt="Student learning online with tablet"> 
-     </figure>
+      <figure class="ph ph-smart" aria-label="placeholder"></figure>
       <div>
         <h2>We Provide <em>Smart</em> Online Education</h2>
         <p>Our courses include projects, demos, rich materials, relevant resources, and real use cases to help you learn deeply from anywhere.</p>
       </div>
     </section>
     <!--end Smart Education-->
+
     <!--start Features-->
     <section class="features">
-      <figure>
-        <img src="features-icons.jpg" alt="Icons representing features">
-      </figure>
-        <h2>Our Features Special For You</h2>
-        <ul>
-          <li>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <h3>Get Certificate</h3>
-            <p>You can take the certification and showcase your achievements on your resume or media.</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-person-chalkboard"></i>
-            <h3>Amazing Instructor</h3>
-            <p>Our expert instructors bring real-world experience and insights.</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-business-time"></i>
-            <h3>Life Time Support</h3>
-            <p>Enjoy lifetime access to your course materials and coaching if included.</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-file-video"></i>
-            <h3>Video Lesson</h3>
-            <p>Pre-recorded lectures you can watch anytime to boost your progress.</p>
-          </li>
-        </ul>
-      </div>
+      <figure class="ph ph-features" aria-label="placeholder"></figure>
+      <h2>Our Features Special For You</h2>
+      <ul class="features-grid">
+        <li>
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>Get Certificate</h3>
+          <p>You can take the certification and showcase your achievements on your resume or media.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-person-chalkboard"></i>
+          <h3>Amazing Instructor</h3>
+          <p>Our expert instructors bring real-world experience and insights.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-business-time"></i>
+          <h3>Life Time Support</h3>
+          <p>Enjoy lifetime access to your course materials and coaching if included.</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-file-video"></i>
+          <h3>Video Lesson</h3>
+          <p>Pre-recorded lectures you can watch anytime to boost your progress.</p>
+        </li>
+      </ul>
     </section>
-<!--end Features--> 
+    <!--end Features--> 
+
     <!--start Popular Courses-->
     <section class="popular-courses">
       <h2>Popular <em>Courses</em></h2>
-      <ul>
-        <li>
-          <img src="popular1.jpg" alt="Popular courses overview">
+      <ul class="courses">
+        <li class="course-card">
+          <div class="ph ph-course"></div>
           <article>
             <h3>Learn English: Beginning Grammar</h3>
-            <a href="#">View Course</a>
+            <a href="#" class="btn-outline-dark">View Course</a>
           </article>
         </li>
-        <li>
-          <img src="popular2.jpg" alt="Popular courses overview">
+        <li class="course-card">
+          <div class="ph ph-course"></div>
           <article>
             <h3>Learn English: Beginning Grammar</h3>
-            <a href="#">View Course</a>
+            <a href="#" class="btn-outline-dark">View Course</a>
           </article>
         </li>
-        <li>
-          <img src="popular3.jpg" alt="Popular courses overview">
+        <li class="course-card">
+          <div class="ph ph-course"></div>
           <article>
             <h3>Learn English: Beginning Grammar</h3>
-            <a href="#">View Course</a>
+            <a href="#" class="btn-outline-dark">View Course</a>
           </article>
         </li>
       </ul>
     </section>
-<!--end Popular Courses-->
+    <!--end Popular Courses-->
+
     <!--start Getting Started -->
     <section class="getting-started">
       <div>
@@ -131,38 +137,36 @@
           <li>Start Learning</li>
         </ol>
       </div>
-      <figure>
-        <img src="start-learning.jpg" alt="Person starting online learning">
-      </figure>
+      <figure class="ph ph-start" aria-label="placeholder"></figure>
     </section>
-<!--end Getting Started -->
+    <!--end Getting Started -->
+
     <!--start Get Ready-->
     <section class="get-ready">
-      <figure>
-        <img src="get-ready.jpg" alt="Person preparing to learn again"> 
-      </figure>
+      <figure class="ph ph-ready" aria-label="placeholder"></figure>
       <div>
         <h2>Get Ready to Start</h2>
         <p>After a break down, one can begin anew with a clearer vision.</p>
-        <a href="#">Enroll Now</a>
+        <a href="#" class="btn-dark">Enroll Now</a>
       </div>
     </section>
-<!--end Get Ready-->
+    <!--end Get Ready-->
+
     <!--start Mobile App -->
     <section class="mobile-app">
       <div>
         <h2>Try Learning Free on <em>Mobile App</em></h2>
         <p>Available on App Store and Google Play</p>
-        <i class="fa-brands fa-google-play"></i>
-        <i class="fa-brands fa-apple"></i>
+        <div class="store-icons">
+          <i class="fa-brands fa-google-play"></i>
+          <i class="fa-brands fa-apple"></i>
+        </div>
       </div>
-      <figure>
-        <img src="mobile-app.jpg" alt="Learning app on mobile">
-      </figure>
+      <figure class="ph ph-app" aria-label="placeholder"></figure>
     </section>
-<!--end Mobile App -->
+    <!--end Mobile App -->
   </main>
-   <!--end main-->
+
   <!--  start Footer -->
   <footer>
     <p> MoNAC 2024 – All rights reserved.</p>
@@ -176,6 +180,24 @@
       </ul>
     </nav>
   </footer>
-<!--end Footer-->
+  <!--end Footer-->
+<div id="customizePanel" class="side-panel">
+  <div class="panel-header">
+    <h3>Customize theme</h3>
+    <button id="closePanel" class="close-x">&times;</button>
+  </div>
+  <div class="panel-body">
+    <label>Colors</label>
+    <div class="color-options">
+      <span class="color-swatch" data-color="#50d7b6" style="background:#50d7b6"></span>
+      <span class="color-swatch" data-color="#33b36l" style="background: #33b363;"></span>
+      <span class="color-swatch" data-color="#fc9231" style="background:#fc9231"></span>
+      <span class="color-swatch" data-color="#f03d3d" style="background:#f03d3d"></span>
+      <span class="color-swatch" data-color="#006370" style="background:#006370"></span>
+    </div>
+  </div>
+</div>
+<div id="overlay"></div>
+  <script src="script.js"></script>
 </body>
 </html>
